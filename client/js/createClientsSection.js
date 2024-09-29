@@ -58,12 +58,11 @@ export const createClientsSection = () => {
   sortingDisplaySpan.classList.add("display-info__sorting");
   addUserBtn.classList.add("clients__btn", "btn-reset");
   addUserBtnSvg.classList.add("clients__svg");
-  container.classList.add("container");
+  container.classList.add("container", "clients__container");
   main.classList.add("main");
   clientsTable.classList.add("clients__table");
   createSpan.classList.add("create__span");
   editSpan.classList.add("change__span");
-  theadTr.classList.add();
 
   h1.textContent = "Клиенты";
   sortingDisplayId.textContent = "id";
@@ -98,6 +97,6 @@ export const createClientsSection = () => {
   return {
     main,
     clientsTable,
-    tbody
-  }
+    tbody,
+  };
 };
